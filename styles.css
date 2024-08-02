@@ -1,12 +1,12 @@
+/* Existing styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #121212; /* Dark background color */
-    color: #e0e0e0; /* Light text color */
+    color: #e0e0e0; /* Light text color */
 }
-
 
 header {
     background: #1f1f1f; /* Darker header background */
@@ -14,7 +14,6 @@ header {
     padding: 2rem 0;
     text-align: center;
 }
-
 
 header h1 {
     margin: 0;
@@ -127,11 +126,78 @@ footer p {
     margin-top: 1rem;
 }
 
-social-links a {
+.social-links a {
     margin: 0 1rem;
 }
 
-social-links img {
+.social-links img {
     width: 30px;
     height: 30px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    section h2 {
+        font-size: 1.2rem;
+    }
+    
+    section ul li {
+        padding: 0.5rem;
+        border-left: 3px solid #1e90ff;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+    
+    section h2 {
+        font-size: 1rem;
+    }
+    
+    section ul li {
+        padding: 0.3rem;
+        border-left: 2px solid #1e90ff;
+    }
+    
+    .logo {
+        width: 25px;
+        height: 25px;
+    }
 }
